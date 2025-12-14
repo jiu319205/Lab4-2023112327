@@ -92,19 +92,4 @@ public class Solution6Test {
         assertTrue("check方法测试失败，应该是子集", solution.check(0, 1));
         assertFalse("check方法测试失败，应该不是子集", solution.check(1, 0));
     }
-    @Test
-public void testWillFail() {
-    Solution6 solution = new Solution6();
-    
-    // 创建失败的测试
-    List<List<String>> favoriteCompanies = new ArrayList<>();
-    favoriteCompanies.add(Arrays.asList("google", "facebook"));
-    
-    List<Integer> result = solution.peopleIndexes(favoriteCompanies);
-    
-    // 故意断言错误的结果：实际应该是 [0]，但我们说应该是 [1]
-    List<Integer> expected = Arrays.asList(1); // 错误的期望值
-    
-    assertEquals("这个测试故意失败", expected, result);
-}
-}
+   }
